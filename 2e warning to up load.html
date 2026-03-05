@@ -1,0 +1,338 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1">&lt;title&gt;You Scanned! Glad You're Here&lt;/title&gt;</p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&amp;family=Cinzel:wght@400;600;900&amp;family=Cinzel+Decorative:wght@700&amp;display=swap');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>:root {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>--gold: #D4AF37;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>--gold-light: #fff9c4;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>--gold-dark: #8B6914;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>--blue: #1B3A6B;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>--black: #0d0d0d;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: #111;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: #f0ead6;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-family: 'Lato', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>line-height: 1.8;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>overflow-x: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* ── HEADER ── */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>header {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: linear-gradient(160deg, #0a1628 0%, var(--blue) 50%, #0a1628 100%);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 70px 30px 60px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-bottom: 1px solid rgba(212,175,55,0.3);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>header::before {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>content: '';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>inset: 0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: radial-gradient(ellipse at center, rgba(212,175,55,0.08) 0%, transparent 70%);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.hero-flourish {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 24px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>letter-spacing: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.hero-eyebrow {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-family: 'Cinzel', serif;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>letter-spacing: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.hero-title {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-family: 'Cinzel Decorative', serif;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: clamp(30px, 6vw, 56px);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: linear-gradient(180deg, var(--gold-light) 0%, var(--gold) 50%, var(--gold-dark) 100%);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-webkit-background-clip: text;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-webkit-text-fill-color: transparent;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background-clip: text;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>line-height: 1.2;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom: 14px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.hero-sub {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-style: italic;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-weight: 300;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: rgba(212,175,55,0.7);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>letter-spacing: 2px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.ornament {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>gap: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin: 32px auto 0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>max-width: 240px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.orn-line { flex: 1; height: 1px; background: var(--gold); opacity: 0.5; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.orn-diamond { width: 7px; height: 7px; background: var(--gold); transform: rotate(45deg); }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.orn-diamond.sm { width: 4px; height: 4px; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* ── MAIN ── */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>main {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>max-width: 780px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin: 0 auto;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 0 30px 80px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.section {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 60px 0 52px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-bottom: 1px solid rgba(212,175,55,0.15);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.section:last-child { border-bottom: none; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.section-tag {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-family: 'Cinzel', serif;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 13px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>letter-spacing: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom: 14px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.section-title {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-family: 'Cinzel Decorative', serif;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: clamp(26px, 4vw, 40px);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: linear-gradient(180deg, var(--gold-light) 0%, var(--gold) 60%, var(--gold-dark) 100%);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-webkit-background-clip: text;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-webkit-text-fill-color: transparent;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background-clip: text;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom: 24px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>line-height: 1.3;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.lead {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 21px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-weight: 400;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>line-height: 1.85;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: #f0ead6;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>p {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-weight: 300;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>line-height: 1.95;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: rgba(240,234,214,0.85);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.highlight {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-style: italic;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>blockquote {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-left: 3px solid var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 14px 0 14px 28px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin: 32px 0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-style: italic;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 21px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-weight: 300;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: rgba(212,175,55,0.9);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>line-height: 1.75;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: rgba(212,175,55,0.04);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-radius: 0 4px 4px 0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* ── TRAIT CARDS ── */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.traits {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));</p>
+<p class="p1"><span class="Apple-converted-space">    </span>gap: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-top: 28px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.trait-card {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border: 1px solid rgba(212,175,55,0.3);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 22px 20px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: rgba(212,175,55,0.05);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.trait-card::before {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>content: '';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>top: 0; left: 0; right: 0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>height: 2px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: linear-gradient(to right, transparent, var(--gold), transparent);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.trait-title {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-family: 'Cinzel', serif;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 14px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>letter-spacing: 2px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: var(--gold);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.trait-desc {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-weight: 300;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: rgba(240,234,214,0.8);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>line-height: 1.75;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* ── FOOTER ── */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>footer {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 48px 24px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-top: 1px solid rgba(212,175,55,0.12);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>footer p {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-family: 'Cinzel', serif;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 14px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: rgba(212,175,55,0.45);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>letter-spacing: 3px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;header&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="hero-flourish"&gt;❧ ✦ ❧&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;p class="hero-eyebrow"&gt;You scanned! Glad you're here —&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h1 class="hero-title"&gt;We Can Be Friends Now&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;p class="hero-sub"&gt;here's a little guide to how I'm wired&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="ornament"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="orn-line"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="orn-diamond sm"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="orn-diamond"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="orn-diamond sm"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="orn-line"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;main&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;section class="section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;span class="section-tag"&gt;01 · Extroversion&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2 class="section-title"&gt;I gain energy from people&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="lead"&gt;Extroversion isn't about being loud or the center of attention — it's about where your energy comes from.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Extroverts recharge by being around others. Conversation, collaboration, and social connection don't drain me — they &lt;span class="highlight"&gt;fuel me&lt;/span&gt;. Solitude, while sometimes needed, slowly depletes my energy rather than restoring it.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;blockquote&gt;"An extrovert isn't someone who talks a lot — they're someone who thinks out loud, alongside others."&lt;/blockquote&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="traits"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="trait-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="trait-title"&gt;Thinks out loud&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="trait-desc"&gt;I process ideas by talking through them, not sitting quietly alone.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="trait-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="trait-title"&gt;Energized by crowds&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="trait-desc"&gt;Social situations leave me more alive, not more tired.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="trait-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="trait-title"&gt;Collaborative by nature&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="trait-desc"&gt;My best ideas emerge in dialogue with other people.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;section class="section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;span class="section-tag"&gt;02 · Twice Exceptional&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2 class="section-title"&gt;2E — Gifted &amp; Different&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="lead"&gt;Twice exceptional (2E) means being both intellectually gifted &lt;em&gt;and&lt;/em&gt; having a learning difference or neurodevelopmental condition — at the same time.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;The "twice" refers to two exceptionalities existing together: extraordinary strengths in some areas, and significant challenges in others. 2E individuals often have &lt;span class="highlight"&gt;asynchronous development&lt;/span&gt; — excelling far beyond their peers intellectually while facing real struggles with focus, sensory processing, emotional regulation, or traditional learning environments.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Because their gifts can mask their challenges (and vice versa), 2E people are frequently misunderstood, underserved, or simply exhausted from navigating a world not designed for them.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;blockquote&gt;"Being twice exceptional means your brain runs powerful software on hardware that doesn't always cooperate."&lt;/blockquote&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="traits"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="trait-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="trait-title"&gt;Advanced reasoning&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="trait-desc"&gt;Deep pattern recognition and cross-domain thinking.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="trait-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="trait-title"&gt;Intense curiosity&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="trait-desc"&gt;Hyperfocus on topics that light up the brain — real depth, not just breadth.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="trait-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="trait-title"&gt;Invisible struggles&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="trait-desc"&gt;High achievement can hide real daily challenges from the outside world.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;section class="section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;span class="section-tag"&gt;03 · ADHD&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2 class="section-title"&gt;ADHD — Not a Deficit of Attention&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="lead"&gt;ADHD is a neurodevelopmental condition affecting how the brain regulates attention, impulse control, and executive function.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;The name is misleading. People with ADHD don't lack attention — they have &lt;span class="highlight"&gt;variable, interest-driven attention&lt;/span&gt;. Tasks that are novel, urgent, challenging, or personally meaningful can trigger deep, sustained hyperfocus. Routine or low-stimulation tasks are genuinely harder to engage with neurologically — not a matter of willpower.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;ADHD brains also tend to be highly creative, intuitive, and capable of making connections others miss — which makes the 2E combination particularly powerful (and particularly exhausting).&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;blockquote&gt;"ADHD is like having a race-car brain with bicycle brakes — the engine is extraordinary, the challenge is steering."&lt;/blockquote&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="traits"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="trait-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="trait-title"&gt;Hyperfocus&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="trait-desc"&gt;When engaged, concentration can be extraordinary and all-consuming.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="trait-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="trait-title"&gt;Creative leaps&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="trait-desc"&gt;Non-linear thinking produces novel connections and unexpected solutions.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="trait-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="trait-title"&gt;Executive challenges&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="trait-desc"&gt;Starting, sequencing, and time management require deliberate strategies.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/main&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;footer&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="ornament" style="margin-bottom: 22px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="orn-line"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="orn-diamond sm"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="orn-diamond"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="orn-diamond sm"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="orn-line"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;p&gt;Seriously though · now that you know · we can be friends&lt;/p&gt;</p>
+<p class="p1">&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
